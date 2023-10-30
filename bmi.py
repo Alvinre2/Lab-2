@@ -3,7 +3,7 @@ def calculate_bmi(height, weight):
     print("Weight =" + str(weight))
     bmi = weight / (height*height)
     print("BMI =" + str(bmi))
-    classify_bmi(bmi)
+    return classify_bmi(bmi)
 
 
 def classify_bmi(bmi):
@@ -18,4 +18,5 @@ def classify_bmi(bmi):
         return 1
 
 
-calculate_bmi(height=1.73,weight=57)
+result = calculate_bmi(height=1.73, weight=57)
+print("User is " + str(result))
